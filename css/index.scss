@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Alethia Pro Font
+@font-face {
+  font-family: alethiaProFont;
+  src: url('../fonts/alethia-pro/alethiapro-regular.otf');
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  // background-color: red;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+// HEADER 
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+
+  .header-content__container {
+    position: relative;
+    color: #FFFFFF;
+    margin: 0 0 4rem 4rem;
+    padding: 3rem 0rem 3rem 2rem;
+    background: rgba(7, 28, 53, 0.5);
+    backdrop-filter: blur(7.5px);
+    height: auto;
+    width: 31rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1,
+    h2,
+    h3 {
+      font-family: alethiaProFont;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+      position: relative;
+      padding-bottom: 1.5rem;
+    }
+
+    h1::after{
+      content: '';
+      position: absolute;
+      top: 4.5rem;
+      left: .2rem;
+      height: 1px;
+      width: 7.7rem;
+      background-color: #FFFFFF;
+      // border-bottom: 1px solid white;
+    }
+
+    h2 {
+      font-weight: 300;
+      line-height: 3rem;
+    }
+
+    .header-content__info {
+      display: grid;
+      grid-template-columns: 18% 25% 35%;
+      gap: 2rem;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+    }
+
+    .header-content__see-project{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+      
+      &>div{
+        // display: flex;
+        // align-items: center;
+
+        img {
+          height: .5rem;
+          margin-bottom: .2rem;
+        }
+      }
+    }
+  }
+}
