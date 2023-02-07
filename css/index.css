@@ -18,6 +18,8 @@ html {
 body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .uppercase-text {
@@ -39,6 +41,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 10vh;
 }
 
 .header .header-content__container {
@@ -133,5 +136,60 @@ body {
 .header .header-content__container .header-content__see-project > div img {
   height: .5rem;
   margin-bottom: .2rem;
+}
+
+.body-container {
+  padding: 10vh 5vw;
+}
+
+.available-homes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 60%;
+      grid-template-columns: 35% 60%;
+  gap: 5%;
+}
+
+.available-homes__picture img {
+  width: 100%;
+  height: auto;
+}
+
+.available-homes__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+
+.available-homes__content .chart__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */

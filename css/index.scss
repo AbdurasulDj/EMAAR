@@ -19,6 +19,9 @@ body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   // background-color: red;
+  width: 100%;
+  overflow-x: hidden;
+
 }
 
 .uppercase-text {
@@ -36,6 +39,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  margin-bottom: 10vh;
 
 
   .header-content__container {
@@ -117,6 +121,43 @@ body {
           margin-bottom: .2rem;
         }
       }
+    }
+  }
+}
+
+// BODY
+
+.body-container{
+  padding: 10vh 5vw;
+}
+
+.available-homes{
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 5%;
+
+  &__picture{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+
+    .chart__container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }
