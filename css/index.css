@@ -145,14 +145,14 @@ body {
 .available-homes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35% 60%;
-      grid-template-columns: 35% 60%;
+  -ms-grid-columns: 40% 55%;
+      grid-template-columns: 40% 55%;
   gap: 5%;
 }
 
 .available-homes__picture img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .available-homes__content {
@@ -172,6 +172,25 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 3rem;
+  padding: 2rem 0;
+}
+
+.available-homes__content .available-homes__header {
+  font-family: alethiaProFont, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* or 53px */
+  text-transform: uppercase;
+  color: #071C35;
+}
+
+.available-homes__content .available-homes__paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #777777;
 }
 
 .available-homes__content .chart__container {
@@ -191,5 +210,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.available-homes__content .chart__container .chart__items .chart__header {
+  font-family: alethiaProFont, sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 44px;
+  /* identical to box height */
+  color: #071C35;
+}
+
+.available-homes__content .chart__container .chart__items .chart__paragraph {
+  font-weight: 300;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.available-homes__content .available-homes__btn-container {
+  width: 100%;
+}
+
+.available-homes__content .available-homes__btn-container button {
+  background: #071C35;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 25%;
+  height: 2.5rem;
 }
 /*# sourceMappingURL=index.css.map */
