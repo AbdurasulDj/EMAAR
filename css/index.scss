@@ -131,6 +131,7 @@ body {
   padding: 10vh 5vw;
 }
 
+// Available homes
 .available-homes {
   display: grid;
   grid-template-columns: 40% 55%;
@@ -222,5 +223,89 @@ body {
       }
     }
 
+  }
+}
+
+// Top projects
+
+.top-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  &__header {
+    font-family: alethiaProFont, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    color: #071C35;
+
+  }
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3rem;
+    justify-content: center;
+
+    .top-projects__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .top-projects__grid-content {
+        width: 100%;
+        height: auto;
+        background: #edede8;
+        backdrop-filter: blur(7.5px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 1rem;
+
+        .top-projects__grid-header {
+          font-family: alethiaProFont, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 25px;
+          /* identical to box height */
+
+          text-transform: uppercase;
+
+          color: #071C35;
+        }
+
+        .top-projects__grid-paragraph {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #071C35;
+
+          .top-projects__currency {
+            font-size: 1.3rem;
+          }
+          
+        }
+      }
+    }
   }
 }
